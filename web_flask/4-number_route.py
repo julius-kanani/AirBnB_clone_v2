@@ -32,7 +32,7 @@ def c_route(text):
 @app.route("/python/<txt>", strict_slashes=False)
 def python_route(txt):
     """ Display "Python" followed by text value of the text variable. """
-    return f"C {txt.replace('_', ' ')}"
+    return f"Python {txt.replace('_', ' ')}"
 
 
 @app.route("/number/<int:n>", strict_slashes=False)
